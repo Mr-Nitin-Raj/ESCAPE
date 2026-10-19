@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="theme-color" content="#080b12">
+<title>ESCAPE — The Office Escape</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="game-shell">
+  <canvas id="game" aria-label="The Office Escape game"></canvas>
+  <div id="hud">
+    <div class="brand"><span class="dot"></span><div><b>ESCAPE</b><small>NIGHT SHIFT // 02:17 AM</small></div></div>
+    <div class="status"><span>MENTAL STABILITY</span><div class="meter"><i id="sanity-fill"></i></div><b id="sanity-number">100%</b></div>
+    <div class="objective"><small>CURRENT OBJECTIVE</small><b id="objective-text">Find a way out.</b></div>
+  </div>
+  <div id="prompt" class="hidden"></div>
+  <div id="inventory"><span class="inv-label">POCKETS</span><div id="items"><span class="empty-slot">EMPTY</span></div></div>
+  <div id="message" class="hidden" role="status"></div>
+  <div id="interact-hint">E / SPACE — INTERACT</div>
+  <div id="touch-controls"><div id="joystick" aria-label="Movement joystick"><div id="joystick-knob"></div></div><div class="touch-actions"><button id="music-toggle" aria-pressed="false">♫ AMBIENCE OFF</button><button id="touch-interact">INTERACT</button></div></div><button id="desktop-music-toggle" aria-pressed="false">♫ AMBIENCE OFF</button>
+  <div id="overlay" class="show"><div class="overlay-card"><div class="eyebrow">A PSYCHOLOGICAL THRILLER</div><h1>ESCAPE<br><em>AFTER HOURS</em></h1><p class="intro">The building locked down at 2:17 AM. Your badge is missing. Something is moving between the cubicles.</p><div class="briefing"><div><b>01</b><span>SEARCH</span><small>Explore the abandoned floor.</small></div><div><b>02</b><span>UNRAVEL</span><small>Find clues and solve the access puzzle.</small></div><div><b>03</b><span>GET OUT</span><small>Restore power. Reach the exit.</small></div></div><button id="start-button">BEGIN NIGHT SHIFT <span>↗</span></button><small class="controls-note">Joystick / WASD / ARROWS to move · E or SPACE to interact · ESC to pause</small></div></div>
+  <div id="pause-overlay" class="hidden"><div class="overlay-card compact"><div class="eyebrow">SYSTEM PAUSED</div><h2>Take a breath.</h2><p>The lights are still flickering.</p><button id="resume-button">RESUME</button></div></div>
+</div>
+<script src="game.js"></script>
+</body></html>
